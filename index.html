@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Trains Trains Trains Trains Trains Trains Trains TRAINS TRAINS TRAINS TRAINS TRAINS TRAINS TRAINS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Moment.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4 text-center">Train Master Schedule</h1>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container border border-dark">
+        <div class="row">
+            <div class="bg-dark text-white col-md-12 containerTopper">
+                Schedule
+            </div>
+        </div>
+
+        <br>
+
+        <table class="table">
+            <thead>
+
+                <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                </tr>
+
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container border border-dark">
+        <div class="row">
+            <div class="bg-dark text-white col-md-12 containerTopper">
+                Add Train
+            </div>
+        </div>
+
+        <br>
+
+        <form>
+            <div class="train-form-group col-md-12">
+                <label for="train-name">Train Name</label>
+                <textarea class="form-control" id="train-name" rows="1"></textarea>
+            </div>
+
+            <br>
+
+            <div class="train-form-group col-md-12">
+                <label for="destination">Destination</label>
+                <textarea class="form-control" id="destination" rows="1"></textarea>
+            </div>
+
+            <br>
+
+            <div class="train-form-group col-md-12">
+                <label for="first-time">First Train Time</label>
+                <textarea class="form-control" id="first-time" rows="1"></textarea>
+            </div>
+
+            <br>
+
+            <div class="train-form-group col-md-12">
+                <label for="frequency">Frequency</label>
+                <textarea class="form-control" id="frequency" rows="1"></textarea>
+            </div>
+        </form>
+
+        <br>
+
+        <div class="row">
+            <button type="button" id="submit-button" class="btn btn-primary">Submit</button>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
